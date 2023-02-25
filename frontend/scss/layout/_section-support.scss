@@ -1,0 +1,154 @@
+.support{
+	position: relative;
+	margin-top: em(119);
+	&__content{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #E2EEF3;
+		padding-bottom: em(111);
+	}
+	&__title{
+		position: relative;
+		margin-top: em(50);
+		width: em(200);
+	}
+	&__navigation{
+		position: relative;
+		margin-top: em(70);
+		padding: em(20) em(140);
+		width: em(1300);
+		background-color: white;
+		border-radius: em(100);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: em(20);
+		align-items: center;
+		a{
+			position: relative;
+			padding: em(14) em(20) em(16) em(20);
+			background-color: #fff;
+			border-radius: em(100);
+			font-family: 'PlusJakarta';
+			font-size: em(15);
+			text-align: center;
+			color: black;
+			transition: .3s ease-in-out;
+			&:hover{
+				background-color: #E2EEF3;
+			}
+		} 
+	}
+	&__info{
+		position: relative;
+		margin-top: em(64);
+		width: em(1300);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__info-text{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		margin-top: em(59);
+	}
+	&__info-title{
+		position: relative;
+		font-size: em(27);
+		color: black;
+		text-align: left;
+		font-family: 'PlusJakarta';
+	}
+	&__info-subtitle{
+		position: relative;
+		margin-top: em(17);
+		font-size: em(17);
+		font-family: 'PlusJakarta';
+		line-height: 1.6;
+		text-align: left;
+		width: em(342);
+	}
+	&__info-button{
+		position: relative;
+		margin-top: em(32);
+		a{
+			position: relative;
+			padding: em(11) em(53) em(11) em(20);
+			background-color: black;
+			text-align: center;
+			color: white;
+			font-family: 'PlusJakarta';
+			font-size: em(15);
+			transition: .3s ease-in-out;
+			border-radius: em(100);
+			&:after{
+				position: absolute;
+				content: "";
+				background: url(../../../public/img/arrow-btn.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: em(23);
+				height: em(18);
+				margin-left: em(12);
+				transition: .3s ease-in-out;
+			}
+			&:hover:after{
+				margin-left: em(17);
+			}
+		}
+	}
+	&__info-colage{
+		position: relative;
+		width: em(541);
+		img{
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 1000px){
+	.support__navigation{
+		a{
+			font-size: em(25);
+		}
+	}
+	.support__info-title{
+		font-size: em(32);
+	}
+	.support__info-subtitle{
+		font-size: em(23);
+	}
+	.support__info-button{
+		a{
+			padding: em(11) em(53) em(15) em(20);
+			font-size: em(18);
+		}
+	}
+}
+@media (max-width: 500px){
+	.support__navigation{
+		a{
+			font-size: em(37);
+			line-height: 1.4;
+		}
+	}
+	.support__info-title{
+		font-size: em(50);
+	}
+	.support__info-subtitle{
+		font-size: em(35);
+	}
+	.support__info-button{
+		margin-top: em(82);
+		a{
+			padding: em(14) em(53) em(15) em(20);
+			font-size: em(34);
+		}
+		a:after{
+			top: em(15);
+		}
+	}
+}

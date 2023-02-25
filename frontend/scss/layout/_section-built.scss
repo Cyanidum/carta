@@ -1,0 +1,35 @@
+.built{
+	position: relative;
+	margin-top: em(100);
+	&__container{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__posts{
+		position: relative;
+		margin-top: em(78);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: em(40);
+	}
+	&__subtitle{
+		margin-top: em(41);
+		width: em(430);
+	}
+	&__founders-pic,
+	&__HR-pic,
+	&__law-films-pic,
+	&__investors-pic,
+	&__finance-pic{
+		position: relative;
+		width: em(214);
+		img{
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,289 @@
+- var title = "Carta";
+doctype html
+html
+	include includes/head
+	body
+		.body-wrap
+			section.header.container
+				.header__content
+					.header__navigation.nav-styles
+						.header__logo
+							img(src="../../public/img/logo.png", alt="")
+						.header__products
+							a.header__products-text.arrow(href="#")  Products
+						.header__cases
+							a.header__cases-text.arrow(href="#")  Use Cases
+						.header__pricing
+							a.header__pricing-text(href="#")  Pricing
+						.header__resources
+							a.header__resources-text.arrow(href="#")  Resources
+						.header__company
+							a.header__company-text.arrow(href="#")  Company
+					.header__sign-in 
+						a.header__sign-btn(href="#").gray-btn-styles Sing In
+						a.header__request.submit(href="#") Request a demo
+			section.intro.container 
+				.intro__content
+					.intro__left-collage 
+						.intro__left-first 
+							img(src="../../public/img/left-first.png", alt="")
+						.intro__left-second 
+							img(src="../../public/img/left-second.png", alt="")
+					.intro__information 
+						span.intro__title.title-style Infrastructure for innovators
+						span.intro__subtitle.subtitle-style Carta’s platform of software and services lays the groundwork so you can focus on building the future.
+						.intro__buttons 
+							a.intro__request.submit(href="#") Request a demo
+							a.intro__take-a-tour.gray-btn-styles(href="#") Take a video tour
+					.intro__right-collage 
+						.intro__right-first 
+							img(src="../../public/img/right-first.png", alt="")
+						.intro__right-second 
+							img(src="../../public/img/right-second.png", alt="")
+			section.numbers 
+				.numbers__content.container
+					span.numbers__title.title-style A generation of ownership
+					span.animate.title-style  built on Carta
+					.numbers__owners 
+						span.numbers__owners-1(data-max='2')#count 0
+						span.numbers__owners-2 ,
+						span.numbers__owners-3(data-max='201')#count 0
+						span.numbers__owners-4 ,
+						span.numbers__owners-5(data-max='980')#count 0
+					.numbers__owners-sub Equity owners
+					.numbers__others 
+						.numbers__assets
+							.numbers__assets-title.numbers-title-style.vis_on_scroll
+								span.assets-dollar $
+								span.assets-number(data-max='2')#count 0
+								span.assets-number ,
+								span.assets-number(data-max='5')#count 0
+								span.assets-mark T
+							span.numbers__assets-subtitle.numbers-subtitle-style Assets on platform
+						.numbers__companies
+							.numbers__companies-title.numbers-title-style
+								span.companies-number(data-max='30')#count-1 0
+								span.companies-number ,
+								span.companies-number 000
+							span.numbers__companies-subtitle.numbers-subtitle-style Companies
+						.numbers__administration 
+							.numbers__administration-title.numbers-title-style
+								span.administration-dollar $
+								span.administration-number(data-max='100')#count-1 0
+								span.administration-mark B
+							span.numbers__administration-subtitle.numbers-subtitle-style Assets under administration
+				.numbers__sponsors.container
+					.numbers__canva.numbers-stagger 
+						img(src="../../public/img/canva.png", alt="")
+					.numbers__tribe.numbers-stagger 
+						img(src="../../public/img/tribe.png", alt="")
+					.numbers__betterment.numbers-stagger 
+						img(src="../../public/img/beterment.png", alt="")
+					.numbers__calendly.numbers-stagger
+						img(src="../../public/img/calendly.png", alt="")
+					.numbers__qed.numbers-stagger
+						img(src="../../public/img/qed.png", alt="")
+					.numbers__pipe.numbers-stagger
+						img(src="../../public/img/pipe.png", alt="")
+			section.support 
+				.support__content.container
+					span.support__title.title-style.sup-anim Support 
+						span.support__title-style.sup-anim to 
+						span.support__title-style.sup-anim drive 
+						span.support__title-style.sup-anim your 
+						span.support__title-style.sup-anim business 
+						span.support__title-style.sup-anim forward
+					.support__navigation
+						a.support__management(href="#") Equity Management
+						a.support__compensation(href="#") Compensation
+						a.support__venture-capital(href="#") Venture Capital
+						a.support__liquidity(href="#") Liquidity
+					.support__info 
+						.support__info-text 
+							span.support__info-title Equity Management
+							span.support__info-subtitle Manage all things equity in one place, including cap tables, valuations, fundraising, issuing shares, expense accounting, and equity planning.
+							.support__info-button
+								a.learn-more(href="#") Learn more
+						.support__info-colage 
+							img(src="../../public/img/support-collage.png", alt="")
+			section.built 
+				.built__container
+					.built__title.title-style Built for the builders
+					.built__subtitle.subtitle-style From idea to IPO, Carta supports innovators at every stage and in every role.
+					.built__posts
+						.built__posts-founders.posts-styles
+							.built__founders-pic 
+								img(src="../../public/img/founders.png", alt="")
+							.built__founders-text.post-width
+								.built__founders-title.post-title-styles Founders
+								.built__founders-subtitle.post-subtitle-styles Over 30,000 companies use Carta to fundraise, issue equity, and stay compliant.
+							a.built__founders-learn-more.posts-btn-styles(href="#") Learn more
+						.built__posts-HR.posts-styles
+							.built__HR-pic 
+								img(src="../../public/img/hr.png", alt="")
+							.built__HR-text.post-width 
+								.built__HR-title.post-title-styles HR
+								.built__HR-subtitle.post-subtitle-styles From extending offers to answering employee equity questions, find the tools and team to support you.
+							a.built__HR-learn-more.posts-btn-styles(href="#") Learn more
+						.built__posts-law-films.posts-styles
+							.built__law-films-pic 
+								img(src="../../public/img/law.png", alt="")
+							.built__law-films-text.post-width 
+								.built__law-films-title.post-title-styles Law Firms
+								.built__law-films-subtitle.post-subtitle-styles Help your clients issue equity, raise funds, and stay compliant, all in one place.
+							a.built__law-films-learn-more.posts-btn-styles(href="#") Learn more
+						.built__posts-investors.posts-styles
+							.built__investors-pic 
+								img(src="../../public/img/investors.png", alt="")
+							.built__investors-text.post-width 
+								.built__investors-title.post-title-styles Investors
+								.built__investors-subtitle.post-subtitle-styles Manage your fund on Carta so you can  spend more time on deals and less time dealing with your back office.
+							a.built__investors-learn-more.posts-btn-styles(href="#") Learn more
+						.built__posts-finance.posts-styles
+							.built__finance-pic 
+								img(src="../../public/img/finance.png", alt="")
+							.built__finance-text.post-width 
+								.built__finance-title.post-title-styles Finance
+								.built__finance-subtitle.post-subtitle-styles Grow and plan for the future with tools and services that help you with everything from receiving fast valuations to managing burn to running liquidity events.
+							a.built__finance-learn-more.posts-btn-styles(href="#") Learn more
+			section.focused 
+				.focused__container 
+					.focused__title.focused-stagger F
+						span.focused-stagger o
+						span.focused-stagger c
+						span.focused-stagger u
+						span.focused-stagger s
+						span.focused-stagger e
+						span.focused-stagger d 
+						span.focused-stagger on 
+						span.focused-stagger the 
+						span.focused-stagger f
+						span.focused-stagger u
+						span.focused-stagger t
+						span.focused-stagger u
+						span.focused-stagger r
+						span.focused-stagger e
+					.focused__subtitle.focused-stagger-2 Innovation
+						span.focused-stagger-2  starts
+						span.focused-stagger-2  from 
+						span.focused-stagger-2  within, 
+						span.focused-stagger-2  so 
+						span.focused-stagger-2  we’re 
+						span.focused-stagger-2  always 
+						span.focused-stagger-2  evolving 
+						span.focused-stagger-2  our 
+						span.focused-stagger-2  suite 
+						span.focused-stagger-2  of 
+						span.focused-stagger-2  products 
+						span.focused-stagger-2  to 
+						span.focused-stagger-2  keep 
+						span.focused-stagger-2  you 
+						span.focused-stagger-2  moving 
+						span.focused-stagger-2  forward.
+					.focused__info 
+						.focused__info-text
+							.focused__info-title Carta Total Compensation
+							.focused__info-subtitle Make responsible compensation decisions, stay on budget, and communicate the true value of your compensation packages with Carta Total Comp.
+						.focused__info-pic 
+							img(src="../../public/img/stats.png", alt="")
+			section.author
+				.author__container.container
+					span.author__title As we plan for growth, I’m thrilled to have a partner like Carta that really scales with my startup and its needs.
+					.author__pic 
+						img(src="../../public/img/amber.png", alt="")
+					span.author__name Amber Allen
+					span.author__post Founder & CEO, Double A Labs
+					span.author__sub Read case study
+			section.waiting.container 
+				.waiting__container 
+					.waiting__title.waiting-stagger We 
+						span.waiting-stagger can’t 
+						span.waiting-stagger wait 
+						span.waiting-stagger to 
+						span.waiting-stagger see 
+						span.waiting-stagger what 
+						span.waiting-stagger you 
+						span.waiting-stagger build
+					.waiting__btn
+						a.waiting__request(href="#").gray-btn-styles Request a demo 
+						a.waiting__take-a-tour(href="#").gray-btn-styles Take a video tour
+			section.footer  
+				.footer__container.container
+					.footer__products.footer-subtitle-text
+						a.footer__products-title.footer-title-style(href="#") Additional products
+						a.footer__products-hcls(href="#") Carta for HCLS
+						a.footer__products-safe(href="#") SAFEs
+						a.footer__products-scenario(href="#") Scenario Modeling
+						a.footer__products-portfolio(href="#") Portfolio Insights
+						a.footer__products-internationa(href="#") l Carta for International
+						a.footer__products-espp(href="#") ESPP
+						a.footer__products-management(href="#") Board Management
+					.footer__blogs.footer-subtitle-text
+						a.footer__blogs-title.footer-title-style(href="#") Featured blogs
+						a.footer__blogs-409(href="#") What is a 409A valuation?
+						a.footer__blogs-cap(href="#") What is a cap table?
+						a.footer__blogs-safe-q(href="#") What is a SAFE?
+						a.footer__blogs-vesting(href="#") What is vesting?
+						a.footer__blogs-stock(href="#") What are stock options?
+						a.footer__blogs-pre-past(href="#") Pre-money vs post-money SAFEs
+						a.footer__blogs-taxe(href="#") How are stock options taxed?
+						a.footer__blogs-options(href="#") Exercising stock options
+						a.footer__blogs-calculator(href="#") Internal rate of return (IRR) calculator
+						a.footer__blogs-more(href="#") Read more
+					.footer__partners.footer-subtitle-text
+						a.footer__partners-title.footer-title-style(href="#") Partners
+						a.footer__partners-partner(href="#") Why partner?
+						a.footer__partners-become(href="#") Become a Partner
+						a.footer__partners-law(href="#") Law Firms
+						a.footer__partners-venture(href="#") Venture Capital
+						a.footer__partners-private(href="#") Private Equity
+						a.footer__partners-accelerators(href="#") Accelerators
+						a.footer__partners-partner(href="#") Partner Resources
+						a.footer__partners-startup(href="#") Startup Stack
+					.footer__company.footer-subtitle-text
+						a.footer__company-title.footer-title-style(href="#") Company
+						a.footer__company-about(href="#") About Us
+						a.footer__company-team(href="#") Executive team
+						a.footer__company-careers(href="#") Careers
+						a.footer__company-press(href="#") Press
+						a.footer__company-support(href="#") Support Documentation
+						a.footer__company-notes(href="#") Product Release Notes
+						a.footer__company-legal.footer-title-style(href="#") Legal
+						a.footer__company-privacy(href="#") Privacy Policy
+						a.footer__company-cookie(href="#") Cookie Policy
+						a.footer__company-disclosure(href="#") Legal Disclosure
+						a.footer__company-service(href="#") Terms of Service
+						a.footer__company-e-sign(href="#") E-sign Consent
+						a.footer__company-gdpr(href="#") GDPR Compliance
+						a.footer__company-finra(href="#") FINRA BrokerCheck - Carta Securities, LLC
+						a.footer__company-supplier(href="#") Supplier Terms
+						a.footer__company-security.footer-title-style(href="#") Security
+						a.footer__company-responsible(href="#") Responsible Disclosure Policy
+				.footer__sponsors.container
+					.footer__sponsors-companies
+						.footer__sponsors-sips 
+							img(src="../../public/img/sips.png", alt="")
+						.footer__sponsors-aicpa
+							img(src="../../public/img/aicpa.png", alt="")
+					.footer__sponsors-media
+						a.footer__sponsors-app-store(href="#")  
+							img(src="../../public/img/appstore.png", alt="")
+						a.footer__sponsors-google-play(href="#")  
+							img(src="../../public/img/googleplay.png", alt="")
+						a.footer__sponsors-linked-in(href="#")  
+							img(src="../../public/img/linkedin.png", alt="")
+						a.footer__sponsors-insta(href="#")  
+							img(src="../../public/img/insta.png", alt="")
+						a.footer__sponsors-twitter(href="#")  
+							img(src="../../public/img/twitter.png", alt="")
+				.footer__copyright.container
+					span.footer__copyright-left eShares, Inc. DBA Carta, Inc. (“Carta”) is registered with the U.S. Securities and Exchange Commission as a transfer agent. The services and information described in this communication are provided to you “as is” and “as available” without warranties of any kind, expressed, implied or otherwise, including but not limited to all warranties of merchantability, fitness for a particular purpose, or non-infringement.
+					span.footer__copyright-right Neither Carta nor any of its affiliates will be liable for any damages, including without limitation direct, indirect, special, punitive or consequential damages, caused in any way or arising from the use of the services or reliance upon the information provided in this communication or in connection with any failure of performance, error, omission, interruption, defect, delay in operation or transmission, computer virus or line or system failure. Carta offers certain brokerage services through its wholly owned broker-dealer subsidiaries, Carta Securities, LLC (Member: FINRA/SIPC) and Carta Capital Markets, LLC (Member: FINRA/SIPC). Contact: eShares, Inc. DBA Carta, Inc., 333 Bush Street, Floor 23, Ste. 2300, San Francisco, CA 94104.
+						br
+						br
+						| © 2022 eShares, Inc. DBA Carta, Inc.
+
+
+
+
+		include includes/foot

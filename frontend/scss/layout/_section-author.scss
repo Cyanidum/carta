@@ -1,0 +1,89 @@
+.author{
+	position: relative;
+	margin-top: em(262);
+	&__container{
+		position: relative;
+		background-color: #E2EEF3;
+		padding: em(40) em(80);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: em(860);
+	}
+	&__title{
+		position: relative;
+		font-family: 'Roboto';
+		font-size: em(28);
+		line-height: 1.5;
+		color: black;
+		text-align: center;
+	}
+	&__pic{
+		position: relative;
+		width: em(72);
+		margin-top: em(43);
+		img{
+			width: 100%;
+		}
+	}
+	&__name{
+		position: relative;
+		font-family: 'PlusJakarta';
+		font-size: em(19);
+		color: black;
+		text-align: center;
+		margin-top: em(23);
+	}
+	&__post{
+		position: relative;
+		margin-top: em(7);
+		font-family: 'PlusJakarta';
+		font-size: em(13);
+		text-align: center;
+		color: black;
+	}
+	&__sub{
+		position: relative;
+		margin-top: em(14);
+		font-family: 'PlusJakarta';
+		font-size: em(16);
+		color: black;
+	}
+}
+@media (max-width: 1000px) {
+	.author__title{
+		font-size: em(35);
+	}
+	.author__pic{
+		width: em(130);
+	}
+	.author__name{
+		font-size: em(25);
+	}
+	.author__post{
+		font-size: em(17);
+	}
+	.author__sub{
+		font-size: em(20);
+	}
+}
+@media (max-width: 500px) {
+	.author__title{
+		font-size: em(45);
+	}
+	.author__pic{
+		width: em(190);
+	}
+	.author__name{
+		font-size: em(42);
+	}
+	.author__post{
+		font-size: em(37);
+	}
+	.author__sub{
+		font-size: em(35);
+	}
+	.author__container{
+		width: em(1000);
+	}
+}

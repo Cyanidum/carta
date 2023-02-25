@@ -1,0 +1,96 @@
+.focused{
+	position: relative;
+	margin-top: em(190);
+	&__container{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__title{
+		font-family: 'PlusJakarta';
+		font-size: em(28);
+		color: black;
+		text-align: center;
+	}
+	&__subtitle{
+		font-family: 'PlusJakarta';
+		font-size: em(20);
+		margin-top: em(36);
+		text-align: center;
+		width: em(701);
+		line-height: 1.5;
+	}
+	&__info{
+		position: relative;
+		margin-top: em(61);
+		display: flex;
+		flex-direction: row;
+		gap: em(143);
+	}
+	&__info-text{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: em(17);
+		text-align: left;
+		width: em(392);
+	}
+	&__info-title{
+		font-family: 'PlusJakarta';
+		font-size: em(27);
+		color: black;
+		line-height: 1.5;
+	}
+	&__info-subtitle{
+		font-family: 'PlusJakarta';
+		font-size: em(20);
+		color: black;
+		line-height: 1.5;
+	}
+	&__info-pic{
+		position: relative;
+		width: em(451);
+		img{
+			width: 100%;
+		}
+	}
+}
+@media (max-width:1000px) {
+	.focused__title{
+		font-size: em(36);
+	}
+	.focused__subtitle{
+		font-size: em(26);
+	}
+	.focused__info-title{
+		font-size: em(36);
+	}
+	.focused__info-subtitle{
+		font-size: em(26);
+	}
+	.focused__info-pic{
+		width: em(500);
+	}
+}
+@media (max-width:500px) {
+	.focused__title{
+		font-size: em(56);
+	}
+	.focused__subtitle{
+		font-size: em(36);
+	}
+	.focused__info-title{
+		font-size: em(46);
+	}
+	.focused__info-subtitle{
+		font-size: em(36);
+	}
+	.focused__info-pic{
+		width: em(550);
+	}
+	.focused__info-text{
+		width: em(550);
+	}
+}

@@ -1,0 +1,211 @@
+// header styles
+.nav-styles{
+	font-family: 'PlusJakarta';
+	font-size: em(15);
+	color: black;
+}
+.gray-btn-styles{
+	position: relative;
+	
+	font-family: 'PlusJakarta';
+	font-size: em(15);
+	color: black;
+	padding: em(14) em(20) em(15) em(20);
+	transition: .3s ease-in-out;
+	border: em(1) solid white;
+	border-radius: em(50);
+	background-color: white;
+	&:hover{
+		background-color: #E2EEF3;
+		border: em(1) solid black;
+	}
+}
+.arrow{
+	&:after{
+		position: absolute;
+		content: "";
+		background: url(../../../public/img/arrow.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: em(15);
+		height: em(8);
+		margin-top: em(6);
+		margin-left: em(6);
+		transition: .3s ease-in-out;
+	}
+}
+.submit{
+	position: relative;
+	padding: em(14) em(20) em(15) em(20);
+	background-color: black;
+	border: em(1) solid black;
+	border-radius: em(50);
+	color: white;
+	font-family: 'PlusJakarta';
+	font-size: em(15);
+	transition: .3s ease-in-out;
+	&:hover{
+		background-color: #E2EEF3;
+		color: black;
+	}
+}
+.title-style{
+	font-family: 'Roboto';
+	font-size: em(50);
+	text-align: center;
+	color: black;
+	line-height: 1.5;
+}
+.subtitle-style{
+	font-family: 'PlusJakarta';
+	font-size: em(20);
+	color: #242424;
+	text-align: center;
+	line-height: 1.3;
+}
+.numbers-title-style{
+	font-family: 'PlusJakarta';
+	font-size: em(39);
+	color: black;
+	text-align: center;
+}
+.numbers-subtitle-style{
+	font-family: 'PlusJakarta';
+	font-size: em(19);
+	color: black;
+	text-align: center;
+	line-height: 1.6;
+}
+.posts-styles{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: em(60);
+	transition: .3s ease-in-out;
+	&:hover{
+		transform: scale(1.02);
+	}
+}
+.post-title-styles{
+	font-family: 'PlusJakarta';
+	font-size: em(27);
+	color: black;
+	line-height: 1.5;
+}
+.post-subtitle-styles{
+	font-family: 'PlusJakarta';
+	font-size: em(20);
+	color: black;
+	line-height: 1.5;
+}
+.post-width{
+	width: em(450);
+}
+.posts-btn-styles{
+	position: relative;
+	font-family: 'PlusJakarta';
+	font-size: em(15);
+	color: black;
+	transition: .3s ease-in-out;
+	padding: em(11) em(53) em(11) em(20);
+	background-color: #fff;
+	border-radius: em(100);
+	&:after{
+		position: absolute;
+		content: "";
+		background: url(../../../public/img/arrow-btn-black.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: em(23);
+		height: em(18);
+		margin-left: em(12);
+		transition: .3s ease-in-out;
+	}
+	&:hover{
+		background-color: #E2EEF3;
+	}
+	&:hover:after{
+		margin-left: em(15);
+	}
+}
+.footer-subtitle-text{
+	font-family: 'PlusJakarta';
+	font-size: em(15);
+	color: #ffffff;
+	text-align: left;
+}
+.footer-title-style{
+	text-transform: uppercase;
+	padding-bottom: em(10);
+}
+@media (max-width: 1000px) {
+	.nav-styles{
+		font-size: em(22);
+	}
+	.gray-btn-styles{
+		font-size: em(22);
+	}
+	.submit{
+		font-size: em(22);
+	}
+	.title-style{
+		font-size: em(60);
+	}
+	.subtitle-style{
+		font-size: em(30);
+	}
+	.numbers-subtitle-style{
+		font-size: em(23);
+	}
+	.post-title-styles{
+		font-size: em(32);
+	}
+	.post-subtitle-styles{
+		font-size: em(23);
+		line-height: 1.3;
+	}
+	.posts-btn-styles{
+		font-size: em(20);
+		padding: em(11) em(53) em(13) em(20);
+	}
+	.footer-subtitle-text{
+		font-size: em(21);
+	}
+}
+@media (max-width: 500px) {
+	.gray-btn-styles{
+		font-size: em(42);
+		background-color: #E2EEF3;
+		border: em(1) solid black;
+	}
+	.submit{
+		font-size: em(42);
+	}
+	.subtitle-style{
+		font-size: em(40);
+	}
+	.numbers-subtitle-style{
+		font-size: em(33);
+	}
+	.post-title-styles{
+		font-size: em(47);
+	}
+	.post-subtitle-styles{
+		font-size: em(35);
+		line-height: 1.3;
+	}
+	.posts-btn-styles{
+		font-size: em(35);
+		padding: em(11) em(53) em(13) em(20);
+		&:after{
+			top: em(9);
+		}
+	}
+	.post-width{
+		width: em(840);
+	}
+	.footer-subtitle-text{
+		font-size: em(27);
+	}
+}

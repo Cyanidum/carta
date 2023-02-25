@@ -1,0 +1,84 @@
+.numbers{
+	position: relative;
+	&__content{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: em(650);
+	}
+	&__title{
+		position: relative;
+		margin-top: em(70);
+	}
+	&__owners{
+		position: relative;
+		margin-top: em(25);
+		padding: em(12) em(18) em(11) em(18);
+		border: em(3) solid black;
+		span{
+			font-family: 'PlusJakarta';
+			font-size: em(70);
+			color: black;
+		}
+	}
+	&__owners-sub{
+		font-family: 'PlusJakarta';
+		font-size: em(16);
+		color: black;
+		text-align: center;
+		margin-top: em(5);
+	}
+	&__others{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+	}
+	&__assets,
+	&__companies,
+	&__administration{
+		position: relative;
+		margin-top: em(76);
+		display: flex;
+		flex-direction: column;
+		gap: em(10);
+		width: em(175);
+	}
+	&__sponsors{
+		position: relative;
+		margin-top: em(100);
+		width: em(990 );
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__canva,
+	&__tribe,
+	&__betterment,
+	&__calendly,
+	&__qed,
+	&__pipe{
+		position: relative;
+		width: em(145);
+		img{
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.numbers__owners-sub{
+		font-size: em(20);
+	}
+}
+@media (max-width: 500px) {
+	.numbers__owners-sub{
+		font-size: em(35);
+	}
+	.numbers__assets,
+	.numbers__companies,
+	.numbers__administration{
+		width: em(250);
+	}
+}

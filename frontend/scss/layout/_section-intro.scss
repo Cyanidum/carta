@@ -1,0 +1,88 @@
+.intro{
+	position: relative;
+	margin-top: em(31);
+	&__content{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__left-collage,
+	&__right-collage{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+	&__right-collage{
+		align-items: end;
+	}
+	&__left-first,
+	&__right-first{
+		position: relative;
+		width: em(190);
+		img{
+			width: 100%;
+		}
+	}
+	&__left-second,
+	&__right-second{
+		position: relative;
+		width: em(261);
+		margin-top: em(30);
+		img{
+			width: 100%;
+		}
+	}
+	&__information{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: em(420);
+	}
+	&__title{
+		position: relative;
+	}
+	&__subtitle{
+		position: relative;
+		margin-top: em(31);
+	}
+	&__buttons{
+		position: relative;
+		margin-top: em(46);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: em(36);
+	}
+}
+
+@media (max-width: 1000px){
+	.intro__left-first,
+	.intro__right-first{
+		width: em(290);
+	}
+	.intro__left-second,
+	.intro__right-second{
+		width: em(361);
+	}
+	.intro__information{
+		width: em(520);
+	}
+}
+@media (max-width: 500px){
+	.intro__left-first,
+	.intro__right-first{
+		width: em(340);
+	}
+	.intro__left-second,
+	.intro__right-second{
+		width: em(411);
+	}
+	.intro__information{
+		width: em(520);
+	}
+	.intro__request{
+		display: none;
+	}
+}

@@ -1,0 +1,79 @@
+.header{
+	position: relative;
+	padding: em(23) em(0) em(23) em(0);
+	&__content{ 
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__navigation{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: start;
+		gap: em(56);
+	}
+	&__logo{
+		position: relative;
+		width: em(93);
+		img{
+			width: 100%;
+		}
+	}
+	&__products-text{
+		position: relative;
+		&:hover:after {
+			transform: rotate(180deg);
+		}
+	}
+	&__cases-text{
+		position: relative;
+		&:hover:after {
+			transform: rotate(180deg);
+		}
+	}
+	&__pricing-text{
+		position: relative;
+		margin-left: em(9);
+	}
+	&__resources-text{
+		position: relative;
+		&:hover:after {
+			transform: rotate(180deg);
+		}
+	}
+	&__company-text{
+		position: relative;
+		&:hover:after {
+			transform: rotate(180deg);
+		}
+	}
+	&__sign-in{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: em(40);
+	}
+	
+}
+@media (max-width: 1000px) {
+	.header__logo{
+		width: em(130);
+	}
+}
+@media (max-width: 500px) {
+	.header__logo{
+		width: em(130);
+	}
+	.header__products,
+	.header__cases,
+	.header__pricing,
+	.header__resources,
+	.header__company{
+		display: none;
+	}
+}

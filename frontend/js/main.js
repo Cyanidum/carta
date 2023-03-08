@@ -61,40 +61,6 @@ window.addEventListener('scroll', function num() {
         }
     })
 });
-// if (mediaQuery.matches) {
-//     window.addEventListener('scroll', function num() {
-//         let scrollDistance = window.scrollY;
-//         document.querySelectorAll('.numbers').forEach((el, i) => {
-//             if (el.offsetTop = scrollDistance && flag == true) {
-//                 flag = false;
-//                 valueDisplays.forEach((valueDisplay) => {
-//                     let startValue = 0;
-//                     let endValue = parseInt(valueDisplay.getAttribute('data-max'));
-//                     let duration = Math.floor(interval / endValue);
-//                     let counter = setInterval(function () {
-//                         startValue += 1;
-//                         valueDisplay.textContent = startValue;
-//                         if (startValue >= endValue) {
-//                             clearInterval(counter);
-//                         }
-//                     }, duration)
-//                 });
-//                 subDisplays.forEach((subDisplay) => {
-//                     let startValue = 0;
-//                     let endValue = parseInt(subDisplay.getAttribute('data-max'));
-//                     let duration = Math.floor(subInterval / endValue);
-//                     let counter = setInterval(function () {
-//                         startValue += 1;
-//                         subDisplay.textContent = startValue;
-//                         if (startValue >= endValue) {
-//                             clearInterval(counter);
-//                         }
-//                     }, duration)
-//                 });
-//             }
-//         })
-//     });
-// }
 
 // header-animations
 
